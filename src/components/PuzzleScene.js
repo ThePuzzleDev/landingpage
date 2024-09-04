@@ -55,13 +55,30 @@ const PuzzleScene = () => {
     const extrudeSettings = { depth: 0.3, bevelEnabled: true, bevelSize: 0.05, bevelSegments: 3 };
     const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
 
+   
+   const position = geometry.attributes.position;
+   const vector = new THREE.Vector3();
+
+   const angle = -Math.PI / 12;  
+   const cosAngle = Math.cos(angle);
+   const sinAngle = Math.sin(angle);
+
+   for (let i = 0; i < position.count; i++) {
+     vector.fromBufferAttribute(position, i);
+
+     // Apply rotation matrix for X-axis
+     const y = vector.y * cosAngle - vector.z * sinAngle;
+     const z = vector.y * sinAngle + vector.z * cosAngle;
+
+     position.setXYZ(i, vector.x, y, z);
+   }
+
+   position.needsUpdate = true;
+
+    position.needsUpdate = true;
+
     // Create material with a more realistic appearance
-    const material = new THREE.MeshStandardMaterial({
-      color: 0x000000,
-      roughness: 0.1,
-      metalness: 1,
-      envMapIntensity: 0.8,
-    });
+    const material = new THREE.MeshPhongMaterial({ color: 0x000000, shininess: 200 })
 
     // Create the puzzle piece mesh
     const puzzlePiece = new THREE.Mesh(geometry, material);
@@ -69,13 +86,10 @@ const PuzzleScene = () => {
     scene.add(puzzlePiece);
 
     // Add lights for a more realistic lighting environment
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
-    scene.add(ambientLight);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+    directionalLight.position.z = 9
+    scene.add(directionalLight)
 
-    // Top-right light
-    const directionalLight1 = new THREE.DirectionalLight(0x0aefff, 1);
-    directionalLight1.position.set(5, 5, 5).normalize();
-    scene.add(directionalLight1);
 
     // Add an environment map for reflections (ensure you have a valid HDR image)
     const loader = new THREE.CubeTextureLoader();
@@ -94,8 +108,7 @@ const PuzzleScene = () => {
       requestAnimationFrame(animate);
 
       // Rotate puzzle piece horizontally only
-      puzzlePiece.rotation.y += 0.01;
-
+      puzzlePiece.rotation.y += 0.005;
       renderer.render(scene, camera);
     };
 
