@@ -10,11 +10,12 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-45": "linear-gradient(45deg, #D9D9D9 0%, #D9D9D9 100%)", // Added 45-degree gradient here
       },
     },
   },
   plugins: [],
 };
+
 export default config;
