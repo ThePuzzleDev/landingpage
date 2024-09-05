@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 
 interface ProjectCardProps {
   project: {
     id: number;
-    title: string;
+    name: string;
     description: string;
     image: string;
     link: string;
@@ -17,17 +17,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {/* Image Section with Circular Border */}
       <img
         src={project.image}
-        alt={project.title}
+        alt={project.name}
         className="w-32 h-32 object-cover rounded-full border-2 border-gray-400 mb-6"
       />
       {/* Title */}
-      <h2 className="text-xl font-bold mb-2 text-center">{project.title}</h2>
+      <h2 className="text-xl font-bold mb-2 text-center">{project.name}</h2>
       {/* Description */}
       <p className="text-sm mb-4 text-center">{project.description}</p>
       {/* Link */}
-      <Link href={`/project/${project.id}`}>
-        {/* <a className="text-blue-500 underline text-center">Learn More</a> */}
-        Learn More
+      <Link href={`/project/${project.name}`}>
+        <span className="text-blue-500 underline text-center cursor-pointer">Learn More</span>
       </Link>
     </div>
   );

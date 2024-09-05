@@ -22,10 +22,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center">
           {projects.map((project) => (
             <ProjectCard
-              key={project.id}
+              key={project.name}
               project={{
                 id: project.id,
-                title: project.name, // Map name to title
+                name: project.name, // Map name to title
                 description: project.shortDescription, // Map shortDescription to description
                 image: project.image,
                 link: project.link,
