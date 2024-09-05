@@ -1,16 +1,14 @@
-
-import Services from '@/components/Services';
-import PuzzleScene from '../components/PuzzleScene';
+import React from 'react';
 import HeroSection from '@/components/HeroSection';
-import ContactUs from '@/components/ContactUs';
-import BottomBar from '@/components/BottomBar';
+import Services from '@/components/Services';
 import Portfolio from '@/components/Portfolio';
+import ContactUs from '@/components/ContactUs';
 
 const projectData = [
   {
     id: 1,
     name: "IngreGenius",
-    shortDescription: "Recipe recommendation app",
+    shortDescription: "Your AI-powered sous chef for personalized recipes, cooking assistance, and nutrition tracking all in one intuitive app.",
     fullDescription: "IngreGenius is an AI-powered recipe recommendation app that suggests dishes based on ingredients you have on hand. It uses machine learning algorithms to analyze flavor profiles and user preferences.",
     image: "/images/IngreGenius.png",
     link: "https://ingregenius.com"
@@ -33,13 +31,13 @@ const projectData = [
   }
 ];
 
-export default function Home() {
-  return (
-    <div>
-      <HeroSection id="hero-section"/>
-      <Services/>
-      <Portfolio projects={projectData} />
-      <ContactUs/>
-    </div>
-  );
-}
+const Home: React.FC = () => (
+  <div>
+    <HeroSection />
+    <Services />
+    <Portfolio projects={projectData} />
+    <ContactUs />
+  </div>
+);
+
+export default Home;

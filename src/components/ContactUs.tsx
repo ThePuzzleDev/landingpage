@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="bg-white  py-8 px-4 text-black">
+    <div id = 'contact' className="bg-white  py-8 px-4 text-black">
       {/* Title Section */}
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold mb-2">
