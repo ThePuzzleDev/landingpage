@@ -1,18 +1,18 @@
 'use client'
 
 import { HTMLAttributes, useEffect, useRef, useState } from 'react'
-import { cn } from '@/lib/utils'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import { useInView } from 'framer-motion'
+import { cn } from '@/lib/utils'
 import Phone from './Phone'
 
 const PHONES = [
-  'pages/Screenshots/1.png',
-  '/Screenshots/2.png',
-  '/Screenshots/3.png',
-  '/Screenshots/4.png',
-  '/Screenshots/5.png',
-  '/Screenshots/6.png',
+  '/images/Screenshots/1.jpg',
+  '/images/Screenshots/2.png',
+  '/images/Screenshots/3.png',
+  '/images/Screenshots/4.png',
+  '/images/Screenshots/5.png',
+  '/images/Screenshots/6.png',
 ]
 
 function splitArray<T>(array: Array<T>, numParts: number) {
@@ -151,16 +151,12 @@ function ReviewGrid() {
   )
 }
 
-export function AppScreenshots() {
+export function Reviews() {
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
-      <img
-        aria-hidden='true'
-        src='/what-people-are-buying.png'
-        className='absolute select-none hidden xl:block -left-32 top-1/3'
-      />
-
-      <ReviewGrid />
+    <ReviewGrid />
     </MaxWidthWrapper>
+      
+   
   )
 }

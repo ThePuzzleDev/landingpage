@@ -5,6 +5,7 @@ import DownloadButton from '../../components/Download';
 import Features from '../../components/Features';
 import PrivacyPolicy from '../../components/PrivacyPolicy';
 import './projects.css'
+import { Reviews } from '@/components/AppScreenshots';
 
 // Mock data; replace with your data fetching logic or use getStaticProps
 const projectData = [

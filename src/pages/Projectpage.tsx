@@ -35,10 +35,10 @@ export default function ProjectDetail() {
     <div className="min-h-screen bg-black text-white">
       <Header name={project.name} />
       <main className="container mx-auto px-4">
-        <Description text={project.description} />
+        <Description text={project.description} imageSrc={''} />
         <DownloadButton />
         <Features features={project.features} />
-        <PrivacyPolicy />
+        <PrivacyPolicy policy={undefined} />
       </main>
     </div>
   );

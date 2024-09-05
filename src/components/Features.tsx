@@ -1,8 +1,12 @@
 import { useInView } from 'react-intersection-observer';
-import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported // Import your AppScreenshots component
-import { AppScreenshots } from './AppScreenshots';
+import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported
+import { Reviews } from './AppScreenshots';
 
-export default function Features({ features }) {
+interface FeaturesProps {
+  features: string[];
+}
+
+export default function Features({ features }: FeaturesProps) {
   const { ref: featuresRef, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
     threshold: 0.1, // Trigger when 10% of the element is visible
@@ -34,7 +38,7 @@ export default function Features({ features }) {
 
       {/* App Screenshots */}
       <div className="w-full md:w-1/8 mt-6 md:mt-0">
-        <AppScreenshots/>
+        <Reviews/>
       </div>
     </div>
   );
