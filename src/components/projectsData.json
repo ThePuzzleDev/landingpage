@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "IngreGenius",
+        "shortDescription": "Recipe recommendation app",
+        "fullDescription": "IngreGenius is an AI-powered recipe recommendation app that suggests dishes based on ingredients you have on hand. It uses machine learning algorithms to analyze flavor profiles and user preferences.",
+        "image": "/images/ingregenius.jpg",
+        "link": "https://ingregenius.com"
+      },
+      {
+        "id": 2,
+        "name": "EcoTrack",
+        "shortDescription": "Carbon footprint tracker",
+        "fullDescription": "EcoTrack helps users monitor and reduce their carbon footprint. It provides personalized suggestions for eco-friendly lifestyle changes and connects users with local sustainability initiatives.",
+        "image": "/images/ecotrack.jpg",
+        "link": "https://ecotrack.org"
+      },
+      {
+        "id": 3,
+        "name": "MindfulMinutes",
+        "shortDescription": "Meditation and mindfulness app",
+        "fullDescription": "MindfulMinutes offers guided meditations, breathing exercises, and daily mindfulness prompts. It features progress tracking and community support to help users develop a consistent meditation practice.",
+        "image": "/images/mindfulminutes.jpg",
+        "link": "https://mindfulminutes.app"
+      }
+    ]
+  }
