@@ -7,12 +7,12 @@ import { useInView } from 'framer-motion'
 import Phone from './Phone'
 
 const PHONES = [
-  '/testimonial/1.jpg',
-  '/testimonial/2.jpg',
-  '/testimonial/3.jpg',
-  '/testimonial/4.jpg',
-  '/testimonial/5.jpg',
-  '/testimonial/6.jpg',
+  'pages/Screenshots/1.png',
+  '/Screenshots/2.png',
+  '/Screenshots/3.png',
+  '/Screenshots/4.png',
+  '/Screenshots/5.png',
+  '/Screenshots/6.png',
 ]
 
 function splitArray<T>(array: Array<T>, numParts: number) {
