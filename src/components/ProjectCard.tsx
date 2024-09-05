@@ -1,19 +1,19 @@
+import Link from 'next/link';
 import React from 'react';
 
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
 interface ProjectCardProps {
-  project: Project;
+  project: {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+  };
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white bg-opacity-70 text-black rounded-lg  p-6 w-full h-96 max-w-xs flex flex-col items-center justify-between">
+    <div className="bg-white bg-opacity-70 text-black rounded-lg p-6 w-full h-96 max-w-xs flex flex-col items-center justify-between">
       {/* Image Section with Circular Border */}
       <img
         src={project.image}
@@ -25,14 +25,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       {/* Description */}
       <p className="text-sm mb-4 text-center">{project.description}</p>
       {/* Link */}
-      <a
-        href={project.link}
-        className="text-blue-500 underline text-center"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href={`/project/${project.id}`}>
+        {/* <a className="text-blue-500 underline text-center">Learn More</a> */}
         Learn More
-      </a>
+      </Link>
     </div>
   );
 };
