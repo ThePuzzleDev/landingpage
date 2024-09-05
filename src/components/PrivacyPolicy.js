@@ -2,7 +2,7 @@ const PrivacyPolicy = ({ policy }) => {
   return (
     <section className="bg-black min-h-screen flex items-center justify-center py-8 px-4">
       <div className="bg-white w-full max-w-4xl p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-black">Privacy Policy</h2>
+        <h2 className="text-2xl font-bold mb-4 text-black">Privacy Policy for {policy.appName}</h2>
         <p className="mb-4 text-black">Last Updated: {policy.lastUpdated}</p>
         <p className="mb-6 text-black">{policy.description}</p>
         {policy.sections.map((section, index) => (
