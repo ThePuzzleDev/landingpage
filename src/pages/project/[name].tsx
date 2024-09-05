@@ -68,9 +68,9 @@ const projectData = [
         {
           title: "Contact Us",
           content: [
-            "Company: Fitself Dijital Hizmetler Anonim Sirketi",
-            "Address: Sultan Selim Mah. Sultan Selim Cad. No:1 ic Kapi No: 5 Kagithane/İstanbul 34415, Türkiye",
-            "Email: thepuzzledev@gmail.com"
+            "The Puzzle Dev",
+            "Ratnagiri, Maharashtra, India.",
+            "thepuzzledev@gmail.com"
           ]
         }
       ]
