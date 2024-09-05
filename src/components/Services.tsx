@@ -1,7 +1,11 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
 
-const Services: React.FC = () => {
+interface ServicesProps {
+  id?: string; // Optional prop
+}
+
+const Services: React.FC<ServicesProps> = ({ id }) => {
   return (
     <div className="bg-black text-white py-12">
       <div className="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

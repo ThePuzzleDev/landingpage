@@ -7,7 +7,7 @@ const NavBar = () => {
                       The Puzzle Dev
                     </a>
                     <div className="h-full flex items-center space-x-4">
-                        <a href="@/components/Services" className="text-black hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>Services</a>
+                        <a href="#services" className="text-black hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>Services</a>
                         <a href="/portfolio" className="text-black hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>Portfolio</a>
                         <a href="/contacts" className="text-black hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>Contacts</a>
                     </div>
