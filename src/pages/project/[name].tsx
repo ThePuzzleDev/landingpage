@@ -10,6 +10,7 @@ import './projects.css'
 const projectData = [
   {
     name: "IngreGenius",
+    icon: "/images/IngreGenius.png",
     description: "Your AI-powered sous chef for personalized recipes, cooking assistance, and nutrition tracking—all in one intuitive app.",
     features: [
       "AI Powered Recipe Generation",
@@ -95,7 +96,7 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-black text-white">
       <Header name={project.name} />
       <main className="container mx-auto px-4">
-        <Description text={project.description} imageSrc={''} />
+        <Description text={project.description} imageSrc={project.icon} />
         <DownloadButton />
         <Features features={project.features} />
         {/* Pass the privacy policy data if it exists */}

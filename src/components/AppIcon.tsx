@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface ImageComponentProps {
   src: string | StaticImageData;  // Source of the image, can be a URL or a static import
