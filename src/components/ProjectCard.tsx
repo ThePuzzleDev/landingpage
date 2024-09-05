@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <p className="text-sm mb-4 text-center">{project.description}</p>
       {/* Link */}
       <Link href={`/project/${project.name}`}>
-        <span className="text-blue-500 underline text-center cursor-pointer">Learn More</span>
+        <span className="text-blue-500 underline text-center cursor-pointer">Explore</span>
       </Link>
     </div>
   );
