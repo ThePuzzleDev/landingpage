@@ -14,11 +14,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-bold text-black">
           Complete your business puzzle with<br />
-          <span className="typewriter  bg-black text-white  px-2 ">
-            The Puzzle Dev
-          </span>
         </h1>
-        <p className="mt-4 italic text-lg text-gray-700 ">
+        <div className="bg-black w-full md:w-1/2 mt-8 md:mt-0 text-left">
+          <span className="typewriter text-3xl md:text-4xl font-bold text-white pl-6">The Puzzle Dev</span>
+          </div>
+        <p className="mt-4 italic text-lg text-gray-700">
           —where innovation meets the perfect fit.
         </p>
       </div>

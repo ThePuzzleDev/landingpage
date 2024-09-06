@@ -4,6 +4,11 @@ const NavBar = () => {
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="flex h-14 items-center justify-between border-b border-zinc-200">
                     <a href="/" className="flex z-40 font-bold text-black text-xl">
+                    <img 
+                    src="/images/puzzle.png" 
+                    alt="The Puzzle Dev" 
+                    className="w-8 h-8 mr-2" // Adjust size and margin as needed
+                        />
                       The Puzzle Dev
                     </a>
                     <div className="h-full flex items-center space-x-4">

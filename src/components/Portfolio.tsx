@@ -24,12 +24,14 @@ const AnimatedProjectCard: React.FC<{ project: Project; index: number }> = ({ pr
     threshold: 0.1,   // Trigger when 10% of the element is visible
   });
 
+  const globalDelay = 0.5; // Global delay in seconds
+
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-      transition={{ duration: 0.8, delay: index * 0.1 }}
+      transition={{ duration: 0.8, delay: globalDelay + index * 0.1 }}
     >
       <ProjectCard
         project={{
@@ -47,10 +49,10 @@ const AnimatedProjectCard: React.FC<{ project: Project; index: number }> = ({ pr
 const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
   return (
     <div id="portfolio" className="bg-white py-12 flex flex-col items-center">
-      <div className="bg-black rounded-lg text-white text-3xl font-bold px-4 py-4 mb-8">
+      <div className="rounded-xl bg-black text-white text-3xl font-bold px-4 py-4 mb-8">
         Our Creations
       </div>
-      <div className="bg-white rounded-lg p-10 max-w-screen-lg border border-black">
+      <div className="rounded-xl bg-white p-10 max-w-screen-lg border border-black">
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center">
           {projects.map((project, index) => (
             <AnimatedProjectCard key={project.id} project={project} index={index} />
