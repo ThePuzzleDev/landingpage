@@ -26,7 +26,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         width={width}
         height={height}
         layout={layout} // Adjusts the image to fit the container
-        className="rounded-3xl object-cover w-full h-full"
+        className="rounded-full object-cover w-full h-full"
       />
     </div>
   );
