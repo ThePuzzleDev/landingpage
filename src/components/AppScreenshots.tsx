@@ -11,7 +11,7 @@ const PHONES = [
   '/images/Screenshots/2.png',
   '/images/Screenshots/7.png',
   '/images/Screenshots/4.png',
-  '/images/Screenshots/5.png',
+  '/images/Screenshots/9.png',
   '/images/Screenshots/6.png',
 ]
 
@@ -145,8 +145,8 @@ function ReviewGrid() {
           />
         </>
       ) : null}
-      <div className='pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-slate-100' />
-      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-100' />
+           <div className='pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black' />
+      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black' />
     </div>
   )
 }

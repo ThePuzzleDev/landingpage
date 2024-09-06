@@ -4,8 +4,14 @@ const PrivacyPolicy = ({ policy }) => {
 
   return (
     <section className="bg-black min-h-screen flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8 pt-40 ">
-      <div className="bg-white w-full max-w-4xl p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-black">Privacy Policy for {policy.appName}</h2>
+      <div className="rounded-3xl bg-white w-full max-w-4xl p-4 sm:p-6 lg:p-8  shadow-lg">
+      <div className="flex justify-center">
+      <h2 className="rounded-xl text-2xl font-bold mb-4 text-white bg-black px-4 py-2  text-center border border-white">
+         Privacy Policy for {policy.appName}
+      </h2>
+  </div>
+
+
         <p className="mb-4 text-black">Last Updated: {policy.lastUpdated}</p>
         <p className="mb-6 text-black">{policy.description}</p>
         {policy.sections.filter(section => section.title !== "Contact Us").map((section, index) => (
