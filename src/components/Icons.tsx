@@ -4,7 +4,7 @@ export const Icons = {
     underline:(props:LucideProps) => (
         <svg {...props} viewBox='0 0 687 155'>
   <g
-    stroke='currentColor'
+    stroke='#f5f5f5'
     strokeWidth='7'
     fill='none'
     fillRule='evenodd'

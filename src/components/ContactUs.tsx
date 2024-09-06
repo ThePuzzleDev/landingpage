@@ -18,7 +18,7 @@ const ContactUs: React.FC = () => {
                       bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg 
                       border border-opacity-30 border-gray-300">
         <h2 className="text-md font-bold mb-3">
-          Email Us: <span className="font-normal">contact@thepuzzledev.com</span>
+          Email Us: <span className="font-normal">thepuzzledev@gmail.com</span>
         </h2>
         <hr className="border-t border-gray-300 border-opacity-30 my-3" />
         <p className="text-sm leading-relaxed">
@@ -31,7 +31,7 @@ const ContactUs: React.FC = () => {
       {/* Call-to-Action */}
       <div className="text-center mt-6">
         <a
-          href="mailto:contact@thepuzzledev.com"
+          href="mailto:thepuzzledev@gmail.com"
           className="inline-block bg-black text-white font-bold py-2 px-4 rounded-md shadow hover:bg-opacity-90 transition-colors"
         >
           Let's connect and solve your business puzzle together!

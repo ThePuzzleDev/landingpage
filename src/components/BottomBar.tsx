@@ -14,7 +14,7 @@ const BottomBar: React.FC = () => {
 
       {/* Right Section: App Store Link */}
       <a 
-        href="https://apps.apple.com" // Replace with your actual App Store link
+        href="#" // Replace with your actual App Store link
         className="text-sm hover:underline"
       >
         Download on the App Store

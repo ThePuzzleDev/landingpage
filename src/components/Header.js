@@ -6,7 +6,7 @@ export default function Header({ name }) {
       <div className="relative inline-block">
         <h1 className="text-4xl font-bold">{name}</h1>
         <Icons.underline
-          className="block pointer-events-none absolute inset-x-0 -bottom-2 top-4 text-white-600"
+          className="block pointer-events-none absolute inset-x-0 -bottom-2 top-4 text-white-800"
         />
       </div>
     </header>
