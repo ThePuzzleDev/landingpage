@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils'
 import Phone from './Phone'
 
 const PHONES = [
-  '/images/Screenshots/1.jpg',
+  '/images/Screenshots/1.png',
   '/images/Screenshots/2.png',
-  '/images/Screenshots/3.png',
+  '/images/Screenshots/7.png',
   '/images/Screenshots/4.png',
   '/images/Screenshots/5.png',
   '/images/Screenshots/6.png',
