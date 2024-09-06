@@ -3,8 +3,8 @@ const PrivacyPolicy = ({ policy }) => {
   const contactUsSection = policy.sections.find(sec => sec.title === "Contact Us");
 
   return (
-    <section className="bg-black min-h-screen flex items-center justify-center py-8 px-4">
-      <div className="bg-white w-full max-w-4xl p-8 rounded-lg shadow-lg">
+    <section className="bg-black min-h-screen flex items-center justify-center py-8 px-4 sm:px-6 lg:px-8 pt-40 ">
+      <div className="bg-white w-full max-w-4xl p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-black">Privacy Policy for {policy.appName}</h2>
         <p className="mb-4 text-black">Last Updated: {policy.lastUpdated}</p>
         <p className="mb-6 text-black">{policy.description}</p>

@@ -13,10 +13,10 @@ export default function Features({ features }: FeaturesProps) {
   });
 
   return (
-    <div className="my-6 px-4 flex flex-col md:flex-row items-center justify-between">
+    <div className="my-6 px-4 flex flex-col md:flex-row items-center justify-between ">
       {/* Key Features */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-2xl font-bold mb-4">Key Features</h2>
+  <h2 className="text-2xl font-bold mb-4">Key Features</h2>
         <ul
           ref={featuresRef}
           className={`list-disc list-inside transition-opacity duration-700 ${
@@ -35,6 +35,7 @@ export default function Features({ features }: FeaturesProps) {
           ))}
         </ul>
       </div>
+      
 
       {/* App Screenshots */}
       <div className="w-full md:w-1/8 mt-6 md:mt-0">

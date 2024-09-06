@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface ImageComponentProps {
   src: string | StaticImageData;  // Source of the image, can be a URL or a static import
@@ -13,8 +12,8 @@ interface ImageComponentProps {
 const ImageComponent: React.FC<ImageComponentProps> = ({
   src,
   alt,
-  width = 600,  // Default width
-  height = 400,  // Default height
+  width,  // Default width
+  height,  // Default height
   className
 }) => {
   return (
@@ -24,7 +23,7 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         alt={alt}
         width={width}
         height={height}
-        layout="responsive"  // Adjusts the image to fit the container
+        layout={className}// Adjusts the image to fit the container
       />
     </div>
   );

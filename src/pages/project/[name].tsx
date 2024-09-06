@@ -1,16 +1,18 @@
+// ProjectDetail.tsx
 import { useRouter } from 'next/router';
 import Header from '../../components/Header';
 import Description from '../../components/Description';
 import DownloadButton from '../../components/Download';
 import Features from '../../components/Features';
 import PrivacyPolicy from '../../components/PrivacyPolicy';
-import './projects.css'
+import './projects.css';
 import { Reviews } from '@/components/AppScreenshots';
 
 // Mock data; replace with your data fetching logic or use getStaticProps
 const projectData = [
   {
     name: "IngreGenius",
+    icon: "/images/IngreGenius.png",
     description: "Your AI-powered sous chef for personalized recipes, cooking assistance, and nutrition tracking—all in one intuitive app.",
     features: [
       "AI Powered Recipe Generation",
@@ -80,8 +82,6 @@ const projectData = [
   // other projects...
 ];
 
-
-
 const ProjectDetail = () => {
   const router = useRouter();
   const { name } = router.query; // Get the project name from the URL
@@ -96,7 +96,7 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-black text-white">
       <Header name={project.name} />
       <main className="container mx-auto px-4">
-        <Description text={project.description} imageSrc={''} />
+        <Description text={project.description} imageSrc={project.icon} />
         <DownloadButton />
         <Features features={project.features} />
         {/* Pass the privacy policy data if it exists */}
