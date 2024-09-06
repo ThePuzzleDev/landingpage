@@ -7,14 +7,16 @@ interface ImageComponentProps {
   width?: number;  // Optional width of the image
   height?: number;  // Optional height of the image
   className?: string;  // Optional CSS class name for styling
+  layout?: 'fixed' | 'intrinsic' | 'responsive' | 'fill'; // Corrected layout types
 }
 
 const ImageComponent: React.FC<ImageComponentProps> = ({
   src,
   alt,
-  width,  // Default width
-  height,  // Default height
-  className
+  width,
+  height,
+  className,
+  layout = 'responsive', // Default to 'responsive'
 }) => {
   return (
     <div className={className}>
@@ -23,7 +25,8 @@ const ImageComponent: React.FC<ImageComponentProps> = ({
         alt={alt}
         width={width}
         height={height}
-        layout={className}// Adjusts the image to fit the container
+        layout={layout} // Adjusts the image to fit the container
+        className="rounded-full object-cover w-full h-full"
       />
     </div>
   );
