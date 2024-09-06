@@ -16,7 +16,7 @@ export default function Features({ features }: FeaturesProps) {
     <div className="my-6 px-4 flex flex-col md:flex-row items-center justify-between ">
       {/* Key Features */}
       <div className="w-full md:w-1/2">
-  <h2 className="text-2xl font-bold mb-4">Key Features</h2>
+        <h2 className="text-2xl font-bold mb-4">Key Features</h2>
         <ul
           ref={featuresRef}
           className={`list-disc list-inside transition-opacity duration-700 ${
@@ -26,20 +26,18 @@ export default function Features({ features }: FeaturesProps) {
           {features.map((feature, index) => (
             <li
               key={index}
-              className={`mb-2 transition-transform duration-700 delay-${
-                index * 100
-              }`}
+              className={`mb-2 transition-transform duration-700`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               {feature}
             </li>
           ))}
         </ul>
       </div>
-      
 
       {/* App Screenshots */}
       <div className="w-full md:w-1/8 mt-6 md:mt-0">
-        <Reviews/>
+        <Reviews />
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <p className="text-sm mb-4 text-center">{project.description}</p>
       {/* Link */}
       <Link href={`/project/${project.name}`}>
-        <a className="text-blue-500 underline text-center">Explore</a>
+        Explore
       </Link>
     </div>
   );

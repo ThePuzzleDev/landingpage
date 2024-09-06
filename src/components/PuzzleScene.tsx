@@ -1,9 +1,9 @@
-"use client";
+"use client"; // Ensure this component is only executed on the client
 
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-const PuzzleScene = () => {
+const PuzzleScene: React.FC = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -41,12 +41,10 @@ const PuzzleScene = () => {
 
     // Semicircular cut at the bottom
     shape.absarc(0, -squareSize / 2, radius, Math.PI * 2, 0, false);
-
     shape.lineTo(squareSize / 2.2, squareSize / 2);
 
     // Semicircular cut at the top
     shape.absarc(0, squareSize / 2, radius, 0, Math.PI * 2, false);
-
     shape.lineTo(-squareSize / 2.2, squareSize / 2);
 
     // Semicircle attached to the right side of the square
@@ -88,7 +86,7 @@ const PuzzleScene = () => {
 
     // Add lights for a more realistic lighting environment
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.position.z = 9;
+    directionalLight.position.set(1, 1, 1); // Set light position
     scene.add(directionalLight);
 
     // Add an environment map for reflections (ensure you have a valid HDR image)

@@ -1,5 +1,5 @@
 import React from 'react';
-import PuzzleScene from './PuzzleScene'; // Ensure this is the correct path to your 3D model component
+import PuzzleScene from './PuzzleScene';
 
 interface HeroSectionProps {
   id?: string; // Optional prop
@@ -14,9 +14,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-bold text-black">
           Complete your business puzzle with<br />
-          <span className="bg-black text-white px-2">The Puzzle Dev</span>
+          <span className="typewriter  bg-black text-white  px-2 ">
+            The Puzzle Dev
+          </span>
         </h1>
-        <p className="mt-4 italic text-lg text-gray-700">—where innovation meets the perfect fit.</p>
+        <p className="mt-4 italic text-lg text-gray-700 ">
+          —where innovation meets the perfect fit.
+        </p>
       </div>
     </section>
   );
