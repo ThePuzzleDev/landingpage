@@ -1,44 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* styles/globals.css
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-/* body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black; /* Simulate the cursor */
+  animation: typewriter 4s steps(40, end) forwards, blink-caret 0.75s step-end 5;
+  width: 0; /* Initial width for the typewriter effect */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-} */
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #dddddd, #e0e0e0, #f5f5f5, #4d4d4d);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-animation 4s ease-in-out infinite;
+}
+
