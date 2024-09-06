@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface ProjectCardProps {
@@ -15,18 +16,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-white bg-opacity-70 text-black rounded-lg p-6 w-full h-96 max-w-xs flex flex-col items-center justify-between">
       {/* Image Section with Circular Border */}
-      <img
-        src={project.image}
-        alt={project.name}
-        className="w-32 h-32 object-cover rounded-full border-2 border-gray-400 mb-6"
-      />
+      <div className="w-32 h-32 mb-6 relative">
+        <Image
+          src={project.image}
+          alt={project.name}
+          layout="fill" // Make the Image component fill its parent container
+          objectFit="cover" // Ensure the image covers the area without distortion
+          className="rounded-full border-2 border-gray-400"
+        />
+      </div>
       {/* Title */}
       <h2 className="text-xl font-bold mb-2 text-center">{project.name}</h2>
       {/* Description */}
       <p className="text-sm mb-4 text-center">{project.description}</p>
       {/* Link */}
       <Link href={`/project/${project.name}`}>
-        <span className="text-blue-500 underline text-center cursor-pointer">Explore</span>
+        <a className="text-blue-500 underline text-center">Explore</a>
       </Link>
     </div>
   );
