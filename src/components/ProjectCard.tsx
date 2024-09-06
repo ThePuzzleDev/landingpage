@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white bg-opacity-70 text-black rounded-lg p-6 w-full h-96 max-w-xs flex flex-col items-center justify-between">
+    <div className="bg-white bg-opacity-70 text-black rounded-xl p-6 w-full h-96 max-w-xs flex flex-col items-center justify-between">
       {/* Image Section with Circular Border */}
       <div className="w-32 h-32 mb-6 relative">
         <Image

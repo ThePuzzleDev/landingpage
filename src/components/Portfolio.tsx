@@ -52,7 +52,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
       <div className="rounded-xl bg-black text-white text-3xl font-bold px-4 py-4 mb-8">
         Our Creations
       </div>
-      <div className="rounded-xl bg-white p-10 max-w-screen-lg border border-black">
+      <div className="rounded-xl bg-white  max-w-screen-lg border border-black p-18">
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center">
           {projects.map((project, index) => (
             <AnimatedProjectCard key={project.id} project={project} index={index} />
