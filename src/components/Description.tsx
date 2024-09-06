@@ -24,8 +24,11 @@ const Description: React.FC<DescriptionProps> = ({ text, imageSrc }) => {
           </div>
           <div className="flex-grow">
             <div className="bg-gradient-to-r from-[#1C1B1B] via-[#464545] to-[#939393] rounded-full py-4 px-6">
-              <p className="text-white text-sm">{text}</p>
+            <span className="typewriter  text-white  px-2 ">
+              <p className="text-white text-base">{text}</p>
+              </span>
             </div>
+
           </div>
         </div>
       </div>
