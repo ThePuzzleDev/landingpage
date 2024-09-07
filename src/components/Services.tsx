@@ -29,7 +29,7 @@ const Services: React.FC<ServicesProps> = ({ id }) => {
           <ServiceCard
             title="Mobile Development"
             subtitle="Crafting Exceptional Mobile Experiences"
-            description="Elevate your business with tailor-made mobile applications..."
+            description="Elevate your business with tailor-made mobile applications. Our expertise spans both Android and iOS, ensuring seamless performance and intuitive user interfaces. From concept to launch, we transform your ideas into innovative mobile solutions."
           />
         </motion.div>
 
@@ -43,7 +43,7 @@ const Services: React.FC<ServicesProps> = ({ id }) => {
           <ServiceCard
             title="Web Development"
             subtitle="Building Responsive & Fast Websites"
-            description="Our web development services ensure your website is fast..."
+            description="Our web development services ensure your website is fast, responsive, and engaging. Whether you need an e-commerce platform or a corporate website, we have you covered."
           />
         </motion.div>
 
@@ -57,7 +57,7 @@ const Services: React.FC<ServicesProps> = ({ id }) => {
           <ServiceCard
             title="UI/UX Design"
             subtitle="Designing User-Centered Interfaces"
-            description="We create user-centered designs that are both beautiful..."
+            description="We create user-centered designs that are both beautiful and functional, improving user experience and boosting engagement across your digital platforms."
           />
         </motion.div>
         

@@ -22,7 +22,7 @@ const projectData = [
       "Secure Authentication"
     ],
     privacyPolicy: {
-      lastUpdated: "24.07.2023",
+      lastUpdated: "07.09.2024",
       appName: "IngreGenius",
       description: "An innovative recipe app powered by Google’s Gemini API to provide personalized cooking experiences.",
       sections: [
