@@ -5,6 +5,8 @@ import { Reviews } from './AppScreenshots';
 interface FeaturesProps {
   features: string[];
 }
+
+
 const PHONES = [
   '/images/Screenshots/1.png',
   '/images/Screenshots/2.png',
@@ -18,7 +20,7 @@ const PHONES = [
 export default function Features({ features }: FeaturesProps) {
   const { ref: featuresRef, inView } = useInView({
     triggerOnce: true, // Trigger animation only once
-    threshold: 0.1, // Trigger when 10% of the element is visible
+    threshold: 0.1, 
   });
 
   return (
