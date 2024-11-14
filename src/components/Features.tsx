@@ -51,5 +51,6 @@ export default function Features({ features }: FeaturesProps) {
       <Reviews screenshots={PHONES} />
       </div>
     </div>
+    
   );
 }
