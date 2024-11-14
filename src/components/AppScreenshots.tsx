@@ -6,15 +6,6 @@ import { useInView } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Phone from './Phone'
 
-const PHONES = [
-  '/images/Screenshots/1.png',
-  '/images/Screenshots/2.png',
-  '/images/Screenshots/7.png',
-  '/images/Screenshots/4.png',
-  '/images/Screenshots/9.png',
-  '/images/Screenshots/6.png',
-]
-
 function splitArray<T>(array: Array<T>, numParts: number) {
   const result: Array<Array<T>> = []
 
@@ -106,10 +97,10 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
   )
 }
 
-function ReviewGrid() {
+function ReviewGrid({ screenshots }: { screenshots: string[] }) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const isInView = useInView(containerRef, { once: true, amount: 0.4 })
-  const columns = splitArray(PHONES, 3)
+  const columns = splitArray(screenshots, 3)
   const column1 = columns[0]
   const column2 = columns[1]
   const column3 = splitArray(columns[2], 2)
@@ -145,18 +136,16 @@ function ReviewGrid() {
           />
         </>
       ) : null}
-           <div className='pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black' />
+      <div className='pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black' />
       <div className='pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black' />
     </div>
   )
 }
 
-export function Reviews() {
+export function Reviews({ screenshots }: { screenshots: string[] }) {
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
-    <ReviewGrid />
+      <ReviewGrid screenshots={screenshots} />
     </MaxWidthWrapper>
-      
-   
   )
 }

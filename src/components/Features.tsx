@@ -5,6 +5,15 @@ import { Reviews } from './AppScreenshots';
 interface FeaturesProps {
   features: string[];
 }
+const PHONES = [
+  '/images/Screenshots/1.png',
+  '/images/Screenshots/2.png',
+  '/images/Screenshots/3.png',
+  '/images/Screenshots/4.png',
+  '/images/Screenshots/5.png',
+  '/images/Screenshots/6.png',
+]
+
 
 export default function Features({ features }: FeaturesProps) {
   const { ref: featuresRef, inView } = useInView({
@@ -37,7 +46,7 @@ export default function Features({ features }: FeaturesProps) {
 
       {/* App Screenshots */}
       <div className="w-full md:w-1/8 mt-6 md:mt-0">
-        <Reviews />
+      <Reviews screenshots={PHONES} />
       </div>
     </div>
   );
