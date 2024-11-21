@@ -97,7 +97,7 @@ const projectData = [
     downloadLink: "",
     downloadText: "Coming Soon",
     features: [
-      "AR-Powered Learnin",
+      "AR-Powered Learning",
       "Interactive Concept Mastery",
       "Smart Note-Taking",
       "Engaging Quizzes",
