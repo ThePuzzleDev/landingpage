@@ -13,14 +13,14 @@ const projectData = [
     image: "/images/IngreGenius.png",
     link: "https://ingregenius.com"
   },
-  // {
-  //   id: 2,
-  //   name: "EcoTrack",
-  //   shortDescription: "Carbon footprint tracker",
-  //   fullDescription: "EcoTrack helps users monitor and reduce their carbon footprint. It provides personalized suggestions for eco-friendly lifestyle changes and connects users with local sustainability initiatives.",
-  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJA32WU4rBpx7maglqeEtt3ot1tPIRWptxA&s",
-  //   link: "https://ecotrack.org"
-  // },
+  {
+    id: 2,
+    name: "Immersive Edu",
+    shortDescription: "Transforming learning into an interactive AR adventure!",
+    fullDescription: "ImmersiveEdu redefines learning with cutting-edge augmented reality experiences, bringing concepts to life like never before. Dive into interactive lessons, explore 3D models, and make complex topics fun and engaging. Perfect for curious minds seeking an innovative and user-friendly way to learn.",
+    image: "/images/ImmersiveEdu/appicon.png",
+    link: "https://ecotrack.org"
+  }
   // {
   //   id: 3,
   //   name: "MindfulMinutes",

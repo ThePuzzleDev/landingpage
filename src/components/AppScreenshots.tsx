@@ -144,8 +144,9 @@ function ReviewGrid({ screenshots }: { screenshots: string[] }) {
 
 export function Reviews({ screenshots }: { screenshots: string[] }) {
   return (
-    <MaxWidthWrapper className='relative max-w-5xl'>
+   <MaxWidthWrapper className='relative max-w-5xl'>
       <ReviewGrid screenshots={screenshots} />
     </MaxWidthWrapper>
   )
 }
+
