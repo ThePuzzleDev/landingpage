@@ -14,7 +14,7 @@ const projectData = [
     name: "IngreGenius",
     icon: "/images/IngreGenius.png",
     description: "Your AI-powered sous chef for personalized recipes, cooking assistance, and nutrition tracking—all in one intuitive app.",
-    downloadLink: "https://apps.apple.com/in/app/immersiveedu/id123456789",
+    downloadLink: "https://apps.apple.com/in/app/ingregenius/id6670257708",
     downloadText: "Download Now",
     features: [
       "AI Powered Recipe Generation",
