@@ -94,8 +94,8 @@ const projectData = [
     name: "Immersive Edu",
     icon: "/images/ImmersiveEdu/appicon.png",
     description: "ImmersiveEdu revolutionizes learning with augmented reality, turning complex topics into interactive, engaging experiences. Perfect for curious minds exploring innovative and user-friendly education.",
-    downloadLink: "",
-    downloadText: "Coming Soon",
+    downloadLink: "https://apps.apple.com/us/app/immersiveedu/id6738431824",
+    downloadText: "Download Now",
     features: [
       "AR-Powered Learning",
       "Interactive Concept Mastery",
