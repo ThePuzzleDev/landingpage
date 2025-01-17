@@ -14,7 +14,8 @@ const projectData = [
     name: "IngreGenius",
     icon: "/images/IngreGenius.png",
     description: "Your AI-powered sous chef for personalized recipes, cooking assistance, and nutrition tracking—all in one intuitive app.",
-    downloadLink: "https://apps.apple.com/in/app/ingregenius/id6670257708",
+    appStoreLink: "https://apps.apple.com/in/app/ingregenius/id6670257708",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.thepuzzldev.ingregenius&pcampaignid=web_share",
     downloadText: "Download Now",
     features: [
       "AI Powered Recipe Generation",
@@ -94,7 +95,7 @@ const projectData = [
     name: "Immersive Edu",
     icon: "/images/ImmersiveEdu/appicon.png",
     description: "ImmersiveEdu revolutionizes learning with augmented reality, turning complex topics into interactive, engaging experiences. Perfect for curious minds exploring innovative and user-friendly education.",
-    downloadLink: "https://apps.apple.com/us/app/immersiveedu/id6738431824",
+    appStoreLink: "https://apps.apple.com/us/app/immersiveedu/id6738431824",
     downloadText: "Download Now",
     features: [
       "AR-Powered Learning",
@@ -198,6 +199,106 @@ const projectData = [
       ]
     }
   },
+  {
+    name: "GetLine",
+    icon: "/images/GetLine/GetLineLogo.png",
+    description: "GetLine is an AI-powered quote generator that creates personalized quotes based on user preferences. Enter a mood, topic, or favorite inspiration, and let AI craft meaningful quotes just for you.",
+    appStoreLink: "",
+    downloadText: "Download Now",
+    features: [
+      "AI-Powered Quote Generation",
+      "Personalized Quotes Based on User Interests",
+      "Minimalist & Elegant Design",
+      "Save & Share Your Favorite Quotes",
+      "Light & Dark Mode"
+    ],
+    screenshots: [
+      "/images/GetLine/1.PNG",
+      "/images/GetLine/2.png",
+      "/images/GetLine/3.png",
+      "/images/GetLine/4.png",
+      "/images/GetLine/5.png",
+      "/images/GetLine/6.png",
+      "/images/GetLine/7.png",
+      "/images/GetLine/8.png"
+    ],
+    privacyPolicy: {
+      lastUpdated: "14.01.2025",
+      appName: "GetLine",
+      description: "GetLine is an AI-powered quote generator that creates personalized quotes based on user preferences. Users can enter prompts and receive AI-generated quotes inspired by their favorite movies, shows, artists, and themes.",
+      sections: [
+        {
+          title: "Information We Collect",
+          content: [
+            "GetLine does not require account creation. However, we store user preferences such as selected movies, shows, artists, and themes locally using Core Data.",
+            "We also collect and store user-saved quotes within the app for easy access."
+          ]
+        },
+        {
+          title: "How We Use Your Information",
+          content: [
+            "We use the collected information to:",
+            "- Generate personalized AI-powered quotes based on user preferences",
+            "- Save and display user-selected quotes",
+            "- Enhance app functionality and improve the user experience",
+            "- Ensure smooth performance and personalization of results"
+          ]
+        },
+        {
+          title: "Sharing Your Information",
+          content: [
+            "GetLine does not share or sell your data to third parties.",
+            "Your stored preferences and saved quotes remain on your device.",
+            "We do not use third-party analytics or advertising services."
+          ]
+        },
+        {
+          title: "Data Security",
+          content: [
+            "GetLine stores all user preferences and saved quotes locally on the device using Core Data.",
+            "We implement security best practices to ensure data integrity and prevent unauthorized access.",
+            "Since data is stored locally, deleting the app will remove all stored preferences and saved quotes."
+          ]
+        },
+        {
+          title: "User Rights and Choices",
+          content: [
+            "You have control over your data, including the ability to:",
+            "- Update, add, or remove preferred movies, shows, and themes in your profile settings",
+            "- Delete saved quotes individually or reset all data",
+            "- Uninstall the app to remove all stored data"
+          ]
+        },
+        {
+          title: "Data Retention",
+          content: [
+            "All user data is stored locally on the device and retained as long as the app remains installed.",
+            "Deleting the app will permanently remove all stored data."
+          ]
+        },
+        {
+          title: "Children's Privacy",
+          content: [
+            "GetLine is not intended for children under 13. We do not knowingly collect any personal information from children."
+          ]
+        },
+        {
+          title: "Changes to This Privacy Policy",
+          content: [
+            "We may update this Privacy Policy from time to time. Any significant changes will be communicated via an in-app notification."
+          ]
+        },
+        {
+          title: "Contact Us",
+          content: [
+            "The Puzzle Dev",
+            "Ratnagiri, Maharashtra, India.",
+            "thepuzzledev@gmail.com"
+          ]
+        }
+      ]
+    }
+  }
 ];
 
 const ProjectDetail = () => {
@@ -215,7 +316,7 @@ const ProjectDetail = () => {
       <Header name={project.name} />
       <main className="container mx-auto px-4">
         <Description text={project.description} imageSrc={project.icon} />
-        <DownloadButton link={project.downloadLink} buttonText={project.downloadText} />
+        <DownloadButton link={project.appStoreLink} buttonText={project.downloadText} playStoreLink = {project.playStoreLink} />
         <Features features={project.features} screenshots={project.screenshots} />
         {/* Pass the privacy policy data if it exists */}
         {project.privacyPolicy && <PrivacyPolicy policy={project.privacyPolicy} />}

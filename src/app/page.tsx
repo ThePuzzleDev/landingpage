@@ -20,15 +20,15 @@ const projectData = [
     fullDescription: "ImmersiveEdu redefines learning with cutting-edge augmented reality experiences, bringing concepts to life like never before. Dive into interactive lessons, explore 3D models, and make complex topics fun and engaging. Perfect for curious minds seeking an innovative and user-friendly way to learn.",
     image: "/images/ImmersiveEdu/appicon.png",
     link: "https://ecotrack.org"
+  },
+  {
+    id: 3,
+    name: "GetLine",
+    shortDescription: "Mood Dependent Quotes",
+    fullDescription: "GetLine is an AI-powered quote generator that creates personalized quotes based on user preferences. Enter a mood, topic, or favorite inspiration, and let AI craft meaningful quotes just for you.",
+    image: "/images/GetLine/GetLineLogo.png",
+    link: "https://mindfulminutes.app"
   }
-  // {
-  //   id: 3,
-  //   name: "MindfulMinutes",
-  //   shortDescription: "Meditation and mindfulness app",
-  //   fullDescription: "MindfulMinutes offers guided meditations, breathing exercises, and daily mindfulness prompts. It features progress tracking and community support to help users develop a consistent meditation practice.",
-  //   image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-  //   link: "https://mindfulminutes.app"
-  // }
 ];
 
 const Home: React.FC = () => (
